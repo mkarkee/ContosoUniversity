@@ -1,7 +1,18 @@
 ﻿@model IEnumerable<ContosoUniversity.Models.SchoolViewModels.EnrollmentDateGroup>
 
+
+<br />
+<p style="font-size:2vw">
+    Rexburg University Website Built By: <br />
+    Milan Karki<br />
+    For: CIT 365<br />
+    FROM: Nepal
+</p>
+
+<br/>
+
 @{
-    ViewData["Title"] = "Student Body Statistics";
+    ViewData["Title"] = "Student Body Statistics FOR RU";
 }
 
 <h2>Student Body Statistics</h2>
@@ -18,13 +29,13 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
+            <tr>
+                <td>
                 @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
+                </td>
+                <td>
                 @item.StudentCount
-            </td>
-        </tr>
+                </td>
+            </tr>
     }
 </table>
